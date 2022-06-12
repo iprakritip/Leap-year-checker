@@ -28,30 +28,33 @@ header p{
   color: #fff;
 }
 .command{
-  margin-top: 200px;
-  margin-left: 43%;
-  margin-right: 43%;
+  display: flex;
+  margin-top:10.67rem;
 }
+
 .command p{
   color:#fff;
   font-size: 30px;
+  margin: auto;
 }
 .enter{
-  margin-left: 43%;
-  margin-right: 43%;
+  display:flex;
   margin-top: 10px;
 }
+#year{
+  margin: auto;
+}
 .submitBtn{
-  margin-left: 48%;
-  margin-right: 43%;
+  display: flex;
   margin-top:10px;
+}
+#submitBtn{
+  margin: auto;
 }
 .answer{
   display: flex;
 }
 #message{
-  /* margin-left: 45%;
-  margin-right: 43%; */
   margin-top:10px;
   font-size: 30px;
   margin:auto;
@@ -72,4 +75,23 @@ footer{
 }
 footer p{
   color: #5E5A6F;
+}
+@media (max-width: 450px){
+  header p {
+    font-size: 23px;
+  }.command{
+    margin-top: 250px;
+  }
+  .command p{
+    font-size: 25px;
+  }
+  #message{
+    font-size: 20px;
+  }
+  footer{
+    margin-top: 408px;
+  }
+footer p {
+  font-size: 15px;
+}
 }
