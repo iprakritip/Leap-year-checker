@@ -1,4 +1,3 @@
-
 document.getElementById("submitBtn").addEventListener("click", function(e){
   var yearZie = document.getElementById("year").value;
 
@@ -13,4 +12,15 @@ document.getElementById("submitBtn").addEventListener("click", function(e){
   document.getElementById("message").classList.add("notLeap");
   document.getElementById("message").classList.remove("leap");
   };
+});
+
+// document.getElementById("submitBtn").addEventListener("keydown", function(e){
+//   if (event.key === "Enter") {
+// event.Default();
+// }
+// });
+document.addEventListener("keydown", function(event){
+  if(event.code=='Enter'){
+document.getElementById("submitBtn").click();
+}
 });
